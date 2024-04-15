@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #container {
+        height: 100vh;
+        overflow: auto;
+      }
+      .Weko {
+        display: flex;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div id="container"></div>
+      <script src="./index.js"></script>
+      <script>
+        const renderList = async () => {
+          const list = await getList();
+          console.log(list);
+          const total = list.length;
+          const page = 0;
+          const limit = 200;
+          const totalPage = Math.ceil(total / limit);
+
+          const render = (page) => {
+            if (page >= totalPage) return;
+            requestAnimationFrame(() => {
+              // create a document fragment
+              const fragment = document.createDocumentFragment();
+              for (let i = page * limit; i < page * limit + limit; i++) {
+                const item = list[i];
+                const div = document.createElement("div");
+                div.innerHTML = `<span>${item.text}</span>`;
+                // first append to document fragment
+                fragment.appendChild(div);
+              }
+              // disposable appendChild all at once to reduce reflow and repaint
+              container.appendChild(fragment);
+              render(page + 1);
+            });
+          };
+          render(page);
+        };
+        renderList();
+      </script>
+    </body>
+  </body>
+</html>
