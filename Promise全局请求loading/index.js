@@ -24,3 +24,27 @@ class PromiseManager {
     }
   }
 }
+
+// 模拟请求
+function request(delay) {
+  return () => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve("成功喽"), delay);
+    });
+  };
+}
+
+const manager = new PromiseManager();
+
+manager.push(
+  request(1000),
+  request(2000),
+  request(800),
+  request(2000),
+  request(1500)
+);
+
+const timer = setInterval(() => {
+  // 轮询查看loading状态
+  console.log(manager.loading);
+}, 300);
