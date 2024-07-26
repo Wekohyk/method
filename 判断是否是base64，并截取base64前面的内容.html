@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function extractStringBeforeBase64(input) {
+        if (/data:image\/[a-zA-Z]+;base64,/.test(input)) {
+          return input.slice(0, input.indexOf("base64,"));
+        }
+        return input;
+      }
+
+      const test =
+        "some text before base64 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...";
+
+      const result = extractStringBeforeBase64(test);
+      console.log(result);
+    </script>
+  </body>
+</html>
