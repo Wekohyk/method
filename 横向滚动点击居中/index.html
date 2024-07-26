@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="" ref="scrollRef">
+      <div key={index} className="w-40 h-40 bg-$secondaryButton flex
+      items-center justify-center rounded-10 relative" onClick='moveCenter(e)' >
+    </div>
+
+    <script lang="ts">
+      const moveBox = (el: HTMLDivElement) => {
+        // scrollRef.current 是滚动容器的 ref
+        if (!scrollRef.current) return;
+        const { left: targetX, width: targetW } = el.getBoundingClientRect();
+        const scrollX = scrollRef.current.scrollLeft;
+        const scrollW = scrollRef.current.getBoundingClientRect().width;
+        const offset = targetX - scrollW / 2;
+        scrollRef.current?.scrollTo({
+          left: scrollX + offset + targetW / 2,
+          behavior: "smooth",
+        });
+      };
+
+      const moveCenter = (e) => {
+        moveBox(e.currentTarget as HTMLDivElement)
+      }
+    </script>
+  </body>
+</html>
