@@ -1,0 +1,8 @@
+{
+  "methods": {
+    "requestLimit": "Access restricted",
+    "reqPhoto": "You need to grant permission for accessing your photo album in order to use the feature",
+    "goToSet": "Go to settings",
+    "setNext": "Next time"
+  }
+}

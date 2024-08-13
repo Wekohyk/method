@@ -1,0 +1,85 @@
+{
+  "methods": {
+    "requestLimit": "访问受限",
+    "reqPhoto": "需要您授权相册权限,才能使用该功能",
+    "goToSet": "去设置",
+    "setNext": "下次再说"
+  },
+  "connectingAppStore": "正在连接 App Store",
+  "widget": {
+    "unlock": "解锁组件",
+    "infoError": "未能获取组件信息，请重试",
+    "unlockByFlame": "火苗助燃"
+  },
+  "account": {
+    "blance": "火苗余额：{count}",
+    "recharge": "还需{count}",
+    "rechargeLong": "还需要",
+    "blanceShort": "火苗余额"
+  },
+  "unlock": {
+    "already": "已解锁",
+    "byAd": "广告单次解锁",
+    "byFlame": "使用火苗永久解锁",
+    "tips": "你的支持将全额直接助力到创作者",
+    "busy": "网络繁忙，请稍后重试",
+    "notEnoughFlame": "火苗不足，请购买",
+    "priceChanged": "解锁失败，价格发生变动",
+    "adUnlockFailed": "广告解锁失败，请稍后重试",
+    "success": "组件解锁成功"
+  },
+  "common": {
+    "personNum": "{count}人",
+    "otherFunc": "其他功能",
+    "unlockedWidget": "已解锁组件",
+    "customService": "在线客服",
+    "useWidget": "使用组件",
+    "networkError": "网络错误，请稍后重试"
+  },
+  "shortSize": {
+    "small": "小",
+    "medium": "中",
+    "large": "大"
+  },
+  "rule": {
+    "support": "支持创作者，点燃创作热情！",
+    "pushLeft": "为了让我们的创作者持续为大家带来更多精彩内容，我们推出了",
+    "pushContent": "“助燃创作者”",
+    "pushRight": "计划。通过解锁作品，收入将直接回馈给创作者，激励他们创作更多精彩内容。",
+    "ignition": "如何助燃创作者",
+    "watch": "1.观看广告",
+    "watchTips": "创作者可以在作品中设置广告。每次观看广告，都会为他们带来收入，助力他们继续创作。",
+    "flame": "2.使用火苗",
+    "useFlame": "使用“火苗”解锁作品，直接提升创作者的作品热度。这种支持方式将转化为创作者的实际收益，激励他们创作出更多优质内容。",
+    "spirit": "支持创作者的创作精神",
+    "everySpirit": "每一次解锁，都是对创作者辛勤付出的认可和支持。您的支持不仅激励他们继续创作，还能让更多优秀作品呈现在大家面前。让我们一起助燃创作者的创作之火，享受更多精彩内容！",
+    "look": "创作者们，看过来！",
+    "lookLeft": "如果您也是创作者，现在可以通过设置作品的解锁价格，直接获得用户的支持。无论是通过广告还是火苗，您都能获得收益，专注于创作更精彩的内容。加入我们的",
+    "lookContent": "创作者分成计划",
+    "lookRight": "，让您的创作更有价值！"
+  },
+  "recharge": {
+    "recommend": "推荐",
+    "title": "火苗购买",
+    "rulePre": "购买即代表同意",
+    "ruleSufix": "《用户购买协议》",
+    "recharge": "购买{price}",
+    "customServicePre": "购买遇到问题？点击",
+    "customServiceSuffix": "联系在线客服",
+    "success": "购买成功",
+    "fail": "购买失败,如需帮助请联系客服"
+  },
+  "page": {
+    "flame": "我的火苗",
+    "unlockHistory": "解锁记录"
+  },
+  "trialWidget": {
+    "unready": "广告资源未准备好"
+  },
+  "unlockList": {
+    "empty": "未解锁任何组件",
+    "error": "请求失败，点击重新加载",
+    "loading": "加载中...",
+    "done": "没有更多了"
+  }
+}
