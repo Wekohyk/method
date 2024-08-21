@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #000; */
+        position: relative;
+        top: 100px;
+        left: 100px;
+        /* 将动画应用到容器 */
+        animation: rotate 20s linear infinite;
+        /* 设置旋转中心为容器的中心 */
+        transform-origin: center center;
+      }
+      .box {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      .box1 {
+        background-color: red;
+        transform: rotate(0deg) translate(100px) rotate(90deg);
+      }
+      .box2 {
+        background-color: green;
+        transform: rotate(45deg) translate(100px) rotate(90deg);
+      }
+      .box3 {
+        background-color: blue;
+        transform: rotate(90deg) translate(100px) rotate(90deg);
+      }
+      .box4 {
+        background-color: yellow;
+        transform: rotate(135deg) translate(100px) rotate(90deg);
+      }
+      .box5 {
+        background-color: yellowgreen;
+        transform: rotate(180deg) translate(100px) rotate(90deg);
+      }
+      .box6 {
+        background-color: blueviolet;
+        transform: rotate(225deg) translate(100px) rotate(90deg);
+      }
+      .box7 {
+        background-color: orange;
+        transform: rotate(270deg) translate(100px) rotate(90deg);
+      }
+      .box8 {
+        background-color: pink;
+        transform: rotate(315deg) translate(100px) rotate(90deg);
+      }
+      .centerBox {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="centerBox"></div>
+      <div class="box1 box">1</div>
+      <div class="box2 box">2</div>
+      <div class="box3 box">3</div>
+      <div class="box4 box">4</div>
+      <div class="box5 box">5</div>
+      <div class="box6 box">6</div>
+      <div class="box7 box">7</div>
+      <div class="box8 box">8</div>
+    </div>
+  </body>
+</html>
